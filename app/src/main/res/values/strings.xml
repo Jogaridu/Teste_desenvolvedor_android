@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Jorge_teste_desenvolvedor</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="name">Nome</string>
+    <string name="email">Email</string>
+    <string name="cep">CEP</string>
+    <string name="street">Rua</string>
+    <string name="neighborhood">Bairro</string>
+    <string name="city">Cidade</string>
+    <string name="state">Estado</string>
+
+</resources>

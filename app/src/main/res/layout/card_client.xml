@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="1dp"
+    android:layout_margin="20dp"
+    android:layout_marginBottom="25dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:id="@+id/cardTitle"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--            android:background="@drawable/data_card_client"-->
+<!--            android:padding="10dp">-->
+
+            <TextView
+                android:id="@+id/cardClientName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:text="Jorge Gabriel Ricci Dutra"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/cardClientEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/cardClientName"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:text="e-jorge2010@hotmail.com"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimary" />
+
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+        <!--    CARD-CEP    -->
+        <LinearLayout
+            android:id="@+id/cardTitleCep"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/cardClientEmail"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:background="@drawable/data_card_client"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/cep"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/cardClientCep"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="06634020"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:textColor="@color/colorPrimary" />
+        </LinearLayout>
+
+        <!--    CARD-STREET    -->
+        <LinearLayout
+            android:id="@+id/cardTitleStreet"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/cardTitleCep"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:background="@drawable/data_card_client"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/street"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/cardClientStreet"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Jarama"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:textColor="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <!--    CARD-NEIGHBORHOOD   -->
+        <LinearLayout
+            android:id="@+id/cardTitleNeighborhood"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/cardTitleStreet"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:background="@drawable/data_card_client"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/neighborhood"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/cardClientNeighborhood"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Jardim São João"
+                android:textSize="16sp"
+                android:layout_weight="1"
+                android:textColor="@color/colorPrimary" />
+
+        </LinearLayout>
+
+            <!--    CARD-CITY   -->
+            <LinearLayout
+                android:id="@+id/cardTitleCity"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/cardTitleNeighborhood"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:background="@drawable/data_card_client"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/city"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:id="@+id/cardClientCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="Jandira"
+                    android:textSize="16sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimary"/>
+
+            </LinearLayout>
+
+            <!--    CARD-STATE   -->
+            <LinearLayout
+                android:id="@+id/cardTitleState"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/cardTitleCity"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:background="@drawable/data_card_client"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/state"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:id="@+id/cardClientState"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="São Paulo"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimary"/>
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
